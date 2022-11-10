@@ -4,16 +4,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.view.main.PlaceholderFragment">
+    android:layout_height="match_parent">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerCharacters"
+        android:id="@+id/recyclerEvents"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_row_events"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imgCircleProgress"
+        android:layout_width="@dimen/large_margin2"
+        android:layout_height="@dimen/large_margin2"
+        android:background="@drawable/gray_circle_background"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/large_margin"
+        android:layout_height="@dimen/large_margin"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCircleProgress"
+        app:layout_constraintEnd_toEndOf="@+id/imgCircleProgress"
+        app:layout_constraintStart_toStartOf="@+id/imgCircleProgress"
+        app:layout_constraintTop_toTopOf="@+id/imgCircleProgress"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

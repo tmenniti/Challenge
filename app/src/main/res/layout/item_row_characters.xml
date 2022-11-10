@@ -50,6 +50,7 @@
                     android:textAllCaps="true"
                     android:textColor="@color/black"
                     android:textSize="@dimen/large_text_size"
+                    android:textStyle="bold"
                     tools:text="Black Panther" />
 
                 <TextView
@@ -57,7 +58,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:singleLine="true"
-                    android:textColor="@color/black"
+                    android:textColor="@color/dark_gray"
                     android:textSize="@dimen/medium_text_size"
                     tools:text="As the king of the African" />
 
