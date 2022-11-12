@@ -3,7 +3,11 @@
     <dimen name="one_dp">1dp</dimen>
     <dimen name="small_margin">5dp</dimen>
     <dimen name="small_margin2">10dp</dimen>
+    <dimen name="small_margin3">12dp</dimen>
+    <dimen name="small_margin4">14dp</dimen>
+    <dimen name="small_margin5">16dp</dimen>
     <dimen name="normal_margin">20dp</dimen>
+    <dimen name="normal_margin2">24dp</dimen>
     <dimen name="large_margin">30dp</dimen>
     <dimen name="large_margin2">40dp</dimen>
     <dimen name="large_margin3">50dp</dimen>
@@ -11,9 +15,4 @@
     <dimen name="small_size2">120dp</dimen>
     <dimen name="medium_size">150dp</dimen>
     <dimen name="circle_size">300dp</dimen>
-
-    <dimen name="small_text_size">12sp</dimen>
-    <dimen name="normal_text_size">14sp</dimen>
-    <dimen name="medium_text_size">16sp</dimen>
-    <dimen name="large_text_size">18sp</dimen>
 </resources>

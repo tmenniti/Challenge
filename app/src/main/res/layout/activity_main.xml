@@ -19,8 +19,7 @@
             android:layout_height="wrap_content"
             android:text="@string/marvel_challenge"
             android:textColor="@color/only_white"
-            android:textSize="@dimen/large_text_size"
-            android:textStyle="bold"
+            android:textSize="@dimen/normal_margin"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -64,15 +63,15 @@
                 android:id="@+id/imgCharacters"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_person"
-                app:tint="@color/dark_gray" />
+                tools:src="@drawable/ic_superhero_enabled"/>
 
             <TextView
                 android:id="@+id/tvCharacters"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
                 android:text="@string/characters"
-                android:textColor="@color/dark_gray"
+                android:textColor="@color/light_black"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -102,15 +101,16 @@
                 android:id="@+id/imgEvents"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_calendar"
-                app:tint="@color/dark_gray" />
+                tools:src="@drawable/ic_calendar_disabled"/>
 
             <TextView
                 android:id="@+id/tvEvents"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/events"
-                android:textColor="@color/light_gray2" />
+                android:textSize="@dimen/small_margin3"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/dark_gray" />
 
         </LinearLayout>
 

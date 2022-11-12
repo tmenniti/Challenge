@@ -34,6 +34,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun replaceFragment(fragment : Fragment) {
+        binding.imgCharacters.setBackgroundResource(R.drawable.ic_superhero_enabled)
+        binding.imgEvents.setBackgroundResource(R.drawable.ic_calendar_disabled)
+
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.navHostFragment, fragment)
@@ -41,15 +44,19 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun selectCharacters() {
-        binding.tvCharacters.setTextColor(ContextCompat.getColor(this, R.color.dark_gray))
-        binding.tvEvents.setTextColor(ContextCompat.getColor(this, R.color.light_gray2))
+        binding.imgCharacters.setBackgroundResource(R.drawable.ic_superhero_enabled)
+        binding.imgEvents.setBackgroundResource(R.drawable.ic_calendar_disabled)
+        binding.tvCharacters.setTextColor(ContextCompat.getColor(this, R.color.light_black))
+        binding.tvEvents.setTextColor(ContextCompat.getColor(this, R.color.dark_gray))
         binding.tvCharacters.typeface = Typeface.DEFAULT_BOLD
         binding.tvEvents.typeface = Typeface.DEFAULT
     }
 
     private fun selectEvents() {
-        binding.tvEvents.setTextColor(ContextCompat.getColor(this, R.color.dark_gray))
-        binding.tvCharacters.setTextColor(ContextCompat.getColor(this, R.color.light_gray2))
+        binding.imgEvents.setBackgroundResource(R.drawable.ic_calendar_enabled)
+        binding.imgCharacters.setBackgroundResource(R.drawable.ic_superhero_disabled)
+        binding.tvEvents.setTextColor(ContextCompat.getColor(this, R.color.light_black))
+        binding.tvCharacters.setTextColor(ContextCompat.getColor(this, R.color.dark_gray))
         binding.tvEvents.typeface = Typeface.DEFAULT_BOLD
         binding.tvCharacters.typeface = Typeface.DEFAULT
     }

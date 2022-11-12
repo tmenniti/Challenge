@@ -46,11 +46,11 @@
                     android:id="@+id/tvCharacterName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_condensed_regular"
                     android:singleLine="true"
                     android:textAllCaps="true"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/large_text_size"
-                    android:textStyle="bold"
+                    android:textSize="@dimen/normal_margin2"
                     tools:text="Black Panther" />
 
                 <TextView
@@ -58,8 +58,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:singleLine="true"
-                    android:textColor="@color/dark_gray"
-                    android:textSize="@dimen/medium_text_size"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/light_black2"
+                    android:textSize="@dimen/small_margin4"
                     tools:text="As the king of the African" />
 
             </LinearLayout>
