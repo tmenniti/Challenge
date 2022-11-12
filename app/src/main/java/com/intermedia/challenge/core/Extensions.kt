@@ -1,4 +1,4 @@
-package com.company.moviesapp.core
+package com.intermedia.challenge.core
 
 import android.content.Context
 import android.net.ConnectivityManager
@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import com.bumptech.glide.Glide
+import com.intermedia.challenge.R
 
 fun Context.showToast(message: String) {
     val toast : Toast = Toast.makeText(this, message, Toast.LENGTH_LONG)
@@ -20,7 +21,7 @@ fun Context.setImageGlide(urlPhoto: String, imageView: ImageView) {
     Glide.with(this)
         .load(urlPhoto)
         .centerCrop()
-        //.error(R.drawable.ic_error)
+        .error(R.drawable.ic_close)
         //.placeholder(R.drawable.ic_loading)
         .into(imageView)
 }

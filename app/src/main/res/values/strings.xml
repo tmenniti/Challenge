@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Challenge</string>
+
+    <string name="no_connection">You are not connected to the internet</string>
+    <string name="server_error">Error while connecting to the server</string>
+
+    <string name="marvel_challenge">Marvel Challenge</string>
+    <string name="characters">Characters</string>
+    <string name="events">Events</string>
+
+    <string name="comics_to_discuss">Comics to discuss</string>
+    <string name="appears_in_these_comics">Appears in these comics</string>
+
 </resources>

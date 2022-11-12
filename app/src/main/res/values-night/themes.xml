@@ -1,9 +1,27 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
     <style name="Theme.Default" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/black</item>
-        <item name="colorPrimaryDark">@color/light_gray</item>
+        <item name="colorPrimaryDark">@color/white</item>
         <item name="android:navigationBarColor">@color/white</item>
         <item name="colorAccent">@color/light_blue</item>
-        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
+
+    <style name="Theme.Default.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Default.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Default.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TabLayoutAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" >
+
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:textColor">@color/light_gray2</item>
+
+    </style>
+
 </resources>
