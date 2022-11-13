@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.intermedia.challenge.core.BACKDROP_SIZE
+import com.intermedia.challenge.core.BACKDROP_SIZE2
 import com.intermedia.challenge.core.setImageGlide
 import com.intermedia.challenge.data.model.ComicsItem
 import com.intermedia.challenge.data.model.Result
@@ -32,9 +32,9 @@ class CharacterDetailsActivity : AppCompatActivity() {
     }
 
     private fun setCharacterInformation() {
-        var thumbnailPath : String = character.thumbnail.path
+        var thumbnailPath : String = character.thumbnail.path.replace("http","https")
         val thumbnailExtension : String = character.thumbnail.extension
-        thumbnailPath = "$thumbnailPath/$BACKDROP_SIZE.$thumbnailExtension"
+        thumbnailPath = "$thumbnailPath/$BACKDROP_SIZE2.$thumbnailExtension"
 
         binding.tvCharacterName.text = character.name
         setImageGlide(thumbnailPath, binding.imgCharacter)

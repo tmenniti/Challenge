@@ -27,7 +27,7 @@ class CharactersAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val name : String = charactersList[position].name
         val description : String = charactersList[position].description
-        var thumbnailPath : String = charactersList[position].thumbnail.path
+        var thumbnailPath : String = charactersList[position].thumbnail.path.replace("http","https")
         val thumbnailExtension : String = charactersList[position].thumbnail.extension
         thumbnailPath = "$thumbnailPath/$BACKDROP_SIZE.$thumbnailExtension"
 

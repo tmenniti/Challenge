@@ -50,13 +50,15 @@ class FirebaseUIActivity : AppCompatActivity() {
             if (it.isSuccessful) {
                 goToHome()
             } else {
-                val snackbar = Snackbar.make(
+                binding.emailTextInputLayout.error = "."
+                binding.passwordTextInputLayout.error = "."
+                val snackBar = Snackbar.make(
                     binding.constraint,
                     resources.getString(R.string.wrong_credentials),
                     Snackbar.LENGTH_LONG
                 ).setAction("Action", null)
 
-                snackbar.show()
+                snackBar.show()
             }
         }
     }

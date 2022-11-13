@@ -27,6 +27,7 @@
                 android:id="@+id/imgCharacter"
                 android:layout_width="@dimen/small_size2"
                 android:layout_height="@dimen/small_size2"
+                android:scaleType="fitCenter"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:src="@drawable/ic_launcher_background" />

@@ -29,6 +29,7 @@
                 android:layout_height="@dimen/small_size"
                 android:layout_marginStart="@dimen/normal_margin"
                 android:layout_marginTop="@dimen/normal_margin"
+                android:scaleType="fitXY"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:src="@drawable/ic_launcher_background" />
@@ -77,14 +78,22 @@
                 app:layout_constraintTop_toTopOf="@+id/imgEvent"
                 tools:src="@drawable/ic_down" />
 
+            <View
+                android:id="@+id/viewSeparator"
+                android:layout_width="@dimen/one_dp"
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginTop="@dimen/normal_margin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgEvent"/>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintDiscuss"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/normal_margin"
                 android:visibility="gone"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imgEvent"
+                app:layout_constraintTop_toBottomOf="@+id/viewSeparator"
                 tools:visibility="visible">
 
                 <TextView

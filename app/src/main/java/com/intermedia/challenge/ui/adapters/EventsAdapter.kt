@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.intermedia.challenge.core.setImageGlide
 import com.intermedia.challenge.R
+import com.intermedia.challenge.core.BACKDROP_SIZE
 import com.intermedia.challenge.data.model.EventResult
 import com.intermedia.challenge.databinding.ItemRowEventsBinding
 
@@ -55,9 +56,9 @@ class EventsAdapter(
     private fun setEvent(position: Int, holder : ViewHolder) {
         val title : String = eventsList[position].title
         val date : String? = eventsList[position].start
-        var thumbnailPath : String = eventsList[position].thumbnail.path
+        var thumbnailPath : String = eventsList[position].thumbnail.path.replace("http","https")
         val thumbnailExtension : String = eventsList[position].thumbnail.extension
-        thumbnailPath = "$thumbnailPath/portrait_medium.$thumbnailExtension"
+        thumbnailPath = "$thumbnailPath/$BACKDROP_SIZE.$thumbnailExtension"
 
         holder.binding.tvEvent.text = title
         if (!date.isNullOrEmpty()) {
