@@ -49,7 +49,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:singleLine="true"
-                    android:textAllCaps="true"
                     android:textColor="@color/black"
                     android:textSize="@dimen/normal_margin2"
                     tools:text="Civil War" />
@@ -58,6 +57,7 @@
                     android:id="@+id/tvEventDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_margin2"
                     android:fontFamily="@font/roboto"
                     android:singleLine="true"
                     android:textColor="@color/light_black2"

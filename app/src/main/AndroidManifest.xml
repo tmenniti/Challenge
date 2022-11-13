@@ -18,17 +18,22 @@
         android:theme="@style/Theme.Default"
         tools:targetApi="31">
         <activity
-            android:name=".ui.view.CharacterDetailsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.view.MainActivity"
+            android:name=".ui.view.FirebaseUIActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+        <activity
+            android:name=".ui.view.CharacterDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.HomeActivity"
+            android:exported="true"/>
 
         <meta-data
             android:name="preloaded_fonts"

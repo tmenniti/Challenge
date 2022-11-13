@@ -8,9 +8,10 @@
     <color name="light_gray">#616161</color>
     <color name="light_gray2">#919191</color>
     <color name="light_blue">#1C86DA</color>
-    <color name="red">#F44336</color>
+    <color name="red">#B00020</color>
 
     <color name="light_black">@color/black</color>
     <color name="light_black2">@color/black</color>
     <color name="dark_gray">#747474</color>
+    <color name="background">@color/black</color>
 </resources>

@@ -24,4 +24,11 @@
 
     </style>
 
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="boxStrokeWidth">@dimen/zero_dp</item>
+        <item name="boxStrokeWidthFocused">@dimen/zero_dp</item>
+        <item name="hintTextColor">@color/dark_gray</item>
+    </style>
+
 </resources>

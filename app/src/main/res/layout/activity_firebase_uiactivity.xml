@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.view.FirebaseUIActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/only_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="@dimen/small_size2"
+            android:layout_height="@dimen/small_size2"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_marginBottom="@dimen/normal_margin"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTextInputLayout"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_marginEnd="@dimen/normal_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintTopBar"
+        app:startIconDrawable="@drawable/email_black_24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailTextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_background"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textSize="@dimen/small_margin5" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextInputLayout"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_marginEnd="@dimen/normal_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextInputLayout"
+        app:startIconDrawable="@drawable/lock_black_24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordTextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_background"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/password"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textSize="@dimen/small_margin5" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:background="@color/white"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/login"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/small_margin4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextInputLayout" />
+
+    <ImageView
+        android:id="@+id/imgCircleProgress"
+        android:layout_width="@dimen/large_margin2"
+        android:layout_height="@dimen/large_margin2"
+        android:background="@drawable/gray_circle_background"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/large_margin"
+        android:layout_height="@dimen/large_margin"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCircleProgress"
+        app:layout_constraintEnd_toEndOf="@+id/imgCircleProgress"
+        app:layout_constraintStart_toStartOf="@+id/imgCircleProgress"
+        app:layout_constraintTop_toTopOf="@+id/imgCircleProgress"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

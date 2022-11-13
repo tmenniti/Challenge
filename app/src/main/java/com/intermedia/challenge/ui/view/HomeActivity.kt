@@ -6,17 +6,17 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.intermedia.challenge.R
-import com.intermedia.challenge.databinding.ActivityMainBinding
+import com.intermedia.challenge.databinding.ActivityHomeBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityHomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         replaceFragment(CharactersFragment())
@@ -59,6 +59,10 @@ class MainActivity : AppCompatActivity() {
         binding.tvCharacters.setTextColor(ContextCompat.getColor(this, R.color.dark_gray))
         binding.tvEvents.typeface = Typeface.DEFAULT_BOLD
         binding.tvCharacters.typeface = Typeface.DEFAULT
+    }
+
+    override fun onBackPressed() {
+
     }
 
 }
